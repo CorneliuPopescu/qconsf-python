@@ -1,17 +1,18 @@
 kafka:
-  bootstrap.servers: [BOOTSTRAP_SERVERS]
+  bootstrap.servers: "pkc-lzvrd.us-west4.gcp.confluent.cloud:9092"
   security.protocol: "SASL_SSL"
   sasl.mechanisms: "PLAIN"
-  sasl.username: [CC_API_KEY]
-  sasl.password: [CC_API_SECRET]
+  sasl.username: "37INVFIB2R37FI2U"
+  sasl.password: "KBsTjolbJBpL/AkuPtmSJ+8f7CxNlBRHCHJjYSZ6rLDcHbxQgTBqjgx56fyMmPD+"
   session.timeout.ms: 45000
 
 # Confluent Cloud Schema Registry
 schema-registry:
-  schema.registry.url: [CC_SR_URL]
-  basic.auth.user.info: [CC_SR_API_KEY]:[CC_SR_API_SECRET]
+  schema.registry.url: "https://psrc-k0w8v.us-central1.gcp.confluent.cloud"
+  basic.auth.user.info: "P7557OBWCV2CTI4M:C9YXBHS/MPyqi/oIPDCnmlqPJmP5g0oYwvtJLQY1q6rlOH0Mhv/m8MdPfqFIJf8r"
 
 topics:
   users: "users"
   pageviews: "pageviews"
   usermasks: "usermasks"
+  
